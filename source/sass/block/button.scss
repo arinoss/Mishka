@@ -1,0 +1,30 @@
+.button{
+  background-color: transparent;
+  @include font-bold();
+  font-size: 18px;
+  line-height: 20px;
+  color: $text-base;
+  text-transform: uppercase;
+  padding: 16px 0;
+  border: 2px solid $text-base;
+  width: 100%;
+  @media (min-width: $tablet-width){
+    font-size: 17px;
+    padding: 16px 86px;
+    }
+
+    &:hover{
+      background-color: $text-base;
+      color: $white;
+    }
+
+    &:active{
+      background-color: $text-base;
+      color: rgba(255,255,255, 0.3)
+    }
+}
+
+.button--form{
+  font-size: 17px;
+  line-height: 16px;
+}

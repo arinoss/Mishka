@@ -1,0 +1,141 @@
+.reviews{
+  @include font-normal();
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 58px;
+  position: relative;
+  padding-bottom: 45px;
+  margin-top: 31px;
+  @media (min-width: $tablet-width){
+    font-size: 17px;
+    min-height: 457px;
+    padding-right: 50px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding: 0 50px;
+    padding-bottom: 65px;
+  }
+
+  .reviews__wrapper{
+    padding: 0 10%;
+    @media (min-width: $tablet-width){
+      position: relative;
+      padding: 0 50px;
+    }
+    @media (min-width: $desktop-width){
+      padding-left: 200px;
+    }
+  }
+  .reviews__card {
+    margin-bottom: 30px;
+    @media (min-width: $tablet-width){
+      position: absolute;
+      margin-top: 171px;
+    }
+  }
+
+  .reviews__heading{
+    @include heading-mobile();
+    margin: 0;
+
+    @media (min-width: $tablet-width){
+      @include heading-tablet();
+      position: absolute;
+      margin-top: 82px;
+    }
+
+  }
+
+  .card-reviews__user{
+    font-style:normal;
+    line-height: 24px;
+    @media (min-width: $tablet-width){
+      position: absolute;
+      margin-top: 40px;
+    }
+  }
+}
+
+  .blockquote{
+    margin: 0;
+  }
+  .blockquote p{
+    margin: 0;
+  }
+
+
+
+
+.button-reviews{
+  background-color: transparent;
+  padding: 0;
+ padding: 13px 0;
+  width: 50%;
+  border: 1px solid #ECECEC;
+
+  @media (min-width: $tablet-width){
+    border: 0;
+    margin-right: 30px;
+  }
+
+  &:hover{
+      opacity: 0.6;
+  }
+
+  &:active{
+    opacity: 0.3;
+}
+}
+.button-reviews svg{
+  margin-top: 2px;
+}
+
+.reviews__buttons-wrapper{
+  display: flex;
+  margin-bottom: 38px;
+  @media (min-width: $tablet-width){
+    position: absolute;
+    right: 0;
+    margin-top: 360px;
+  }
+
+}
+
+.button--reviews{
+  display: block;
+  width: auto;
+  text-align: center;
+  @media (min-width: $tablet-width){
+    position: absolute;
+    right: 0;
+    top:0;
+    margin-top: 82px;
+  }
+}
+
+
+.card-reviews__image{
+  display: none;
+  position: absolute;
+  z-index: -1;
+  @media (min-width: $tablet-width){
+    display: block;
+  }
+}
+
+.card-reviews__review{
+  margin: 0;
+  margin-bottom: 18px;
+
+}
+
+.reviews__line{
+  @media (min-width: $tablet-width){
+    left: 0;
+  display: block;
+  position: absolute;
+  top: 500px;
+}
+}

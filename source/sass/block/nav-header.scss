@@ -1,0 +1,269 @@
+.nav-header {
+  @include font-bold();
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: none; //  display: block; для открытия мобильного меню
+}
+
+.nav-header-wrapper {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 23% 26% 11% 40%;
+    height: 88px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 20% 20% 25% 8% 27%;
+  }
+}
+
+.nav-header__item {
+  margin: 0;
+  background-color: white;
+  border-bottom: 2px solid $line ;
+  width: 100%;
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    background-color: transparent;
+    padding-left: 25%;
+    border-bottom: 0;
+    padding: 0;
+    text-align: left;
+    height: 58px;
+    padding-top: 30px;
+  }
+}
+
+.nav-header__item a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover span {
+    opacity: 0.6;
+  }
+
+  &:hover svg {
+    fill: #63D1BB;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.header__logo-desktop {
+  height: 78px;
+  min-width: 149px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    order: 2;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 2px solid $line;
+  }
+
+  & a {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+
+.header__logo-tablet {
+  height: 68px;
+  min-width: 113px;
+  display: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 20px;
+    border-bottom: 2px solid $line;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+
+.nav-header__catalog {
+  font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    padding-left: 50px;
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    font-size: 17px;
+    border-bottom: 2px solid $line;
+    border-right: 2px solid $line;
+    border-left: 2px solid $line;
+  }
+}
+
+.nav-header__knitting {
+  font-size: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    padding-left: 50px;
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    font-size: 17px;
+    border-bottom: 2px solid $line;
+  }
+}
+
+.nav-header__search {
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border-left: 2px solid $line ;
+    border-right: 2px solid $line ;
+    padding: 0;
+    padding-top: 35px;
+    height: 53px;
+    border-bottom: 2px solid $line;
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+
+  .nav-header__search-text {
+    @media (min-width: $tablet-width) {
+      @include visually-hidden();
+    }
+  }
+
+
+}
+
+.nav-header__basket {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    order: 2;
+    border-bottom: 2px solid $line;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+    border-right: 2px solid $line;
+
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .nav-header__search-icon {
+    position: absolute;
+    margin-left: -50px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -40px;
+    }
+  }
+}
+
+.nav-header__new {
+  font-size: 15px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    order: 5;
+    padding-left: 50px;
+  }
+}
+
+.nav-header__sale {
+  font-size: 15px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    order: 6;
+    padding-left: 50px;
+  }
+}
+
+.nav-header__delivery {
+  display: none;
+  @include font-normal();
+  font-size: 15px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: end;
+    padding-right: 50px;
+    order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 9;
+  }
+}
+
+.nav-header-empty1 {
+  @media (min-width: $tablet-width) {
+    order: 0;
+    height: 88px;
+    border-bottom: 2px solid $line;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 7;
+    border: 0;
+  }
+}
+
+.nav-header-empty2 {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 8;
+  }
+}

@@ -1,0 +1,161 @@
+.main-promo{
+  position: relative;
+}
+.promo {
+  height: 463px;
+  background-image: url(../../img/hero-mobile.png);
+  background-position: 50% 20%;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  @media (min-resolution: 2dppx){
+    background-image: url(../../img/hero-mobile@2x.png);
+  }
+  @media (min-width: $tablet-width) {
+    height: 746px;
+    background-image: url(../../img/hero-tablet.png);
+    padding: 0 50px;
+    padding-bottom: 100px;
+    @media (min-resolution: 2dppx){
+      background-image: url(../../img/hero-tablet@x2.jpg);
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    background-image: url(../../img/hero-desktop.jpg);
+    @media (min-resolution: 2dppx){
+      background-image: url(../../img/hero-desktop@x2.jpg);
+    }
+  }
+}
+
+
+
+
+.promo__heading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  @include heading-mobile();
+  width: 260px;
+
+  margin-top: 47px;
+
+  @media (min-width: $tablet-width) {
+    @include heading-tablet();
+    width: 668px;
+    margin-top: 155px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    @include heading-desktop();
+    width: 700px;
+    margin-top: 158px;
+  }
+}
+
+.promo-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: calc(100% - 100px);
+    display: flex;
+    align-items: flex-end;
+
+  }
+
+}
+
+.promo__options {
+  width: auto;
+  text-decoration: none;
+  background-color: $mint;
+  color: $white;
+  height: 93px;
+  text-align: start;
+  padding: 5px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36px;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover{
+      height: 98px;
+      padding-top: 0;
+
+      &:hover svg{
+          opacity: 0.7;
+        }
+
+        &:active svg{
+          opacity: 0.3;
+        }
+      }
+
+    }
+  }
+
+
+.promo__options--dark {
+  text-decoration: none;
+  background-color: $blocks-green;
+  color: $white;
+  padding-right: 20px;
+}
+
+.promo__options-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__text {
+  @include font-bold();
+  font-size: 19px;
+  line-height: 24px;
+  width: 130px;
+
+  @media (min-width: $tablet-width) {
+    @include font-bold();
+    font-size: 20px;
+    line-height: 30px;
+    width: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-bold();
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.options-promo__icon-chandelier {
+  height: 62px;
+  width: 40px;
+}
+
+.options-promo__icon-toy {
+  height: 60px;
+  width: 60px;
+}
+
+.advantage__icon-f:hover{
+  fill:red;
+
+}
+
+
+
+.advantage__icon-f{
+  fill:#63D1BB;
+
+}
+
+

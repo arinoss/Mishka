@@ -1,0 +1,75 @@
+$white: #FFFFFF;
+$black: #000000;
+$mint: #63D1BB;
+$blocks-green: #56C3B2;
+$item-dark-green: #149080;
+$green-line: #62D1BA;
+$blocks-gray: #F1F1F1;
+$light-gray-bg: #F9F9F9;
+$text-base: #444444;
+$line: #ECECEC;
+$mail: #46C1AE;
+
+@mixin font-normal{
+  font-family: "Open Sans", normal, sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-bold{
+  font-family: "Open Sans Bold", bold, sans-serif;
+  font-weight: 700;
+}
+
+@mixin flexible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin heading-mobile{
+  @include font-bold();
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@mixin heading-tablet {
+  @include font-bold();
+  font-size: 43px;
+  line-height: 50px;
+}
+
+
+@mixin heading-desktop {
+  @include font-bold();
+  font-size: 53px;
+  line-height: 57px;
+}
+
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.display-block{
+  display: block;
+}
+
+
+.zigzag{
+  display: none;
+  @media (min-width: $tablet-width){
+    display: block;
+  position: absolute;
+bottom: -35px;  }
+}
+
+

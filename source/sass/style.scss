@@ -1,0 +1,25 @@
+$desktop-width: 1150px;
+$tablet-width: 768px;
+$mobile-width: 767px;
+
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+@import "block/button.scss";
+@import "block/page.scss";
+@import "block/page-body.scss";
+@import "block/header.scss";
+@import "block/main.scss";
+@import "block/nav-header.scss";
+@import "block/promo.scss";
+@import "block/reviews.scss";
+@import "block/product-of-week__list.scss";
+@import "block/advantage.scss";
+@import "block/contacts.scss";
+@import "block/footer.scss";
+@import "block/catalog.scss";
+@import "block/product-list.scss";
+@import "block/process-production.scss";
+@import "block/main-form.scss";
+@import "block/form.scss";
+@import "block/svg-styles.scss";

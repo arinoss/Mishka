@@ -1,0 +1,153 @@
+.contacts{
+  @include font-normal();
+  font-size: 14px;
+line-height: 30px;
+margin-top: 38px;
+padding-bottom: 39px;
+
+@media (min-width: $tablet-width){
+  padding-bottom: 57px;
+  font-size: 17px;
+
+}
+
+@media (min-width: $desktop-width){
+  padding-bottom: 105px;
+
+}
+
+
+
+.contacts__wrapper{
+padding: 0 10%;
+@media (min-width: $tablet-width){
+  padding: 0 50px;
+}
+
+@media (min-width: $desktop-width){
+  padding: 0;
+  padding-left: 113px;
+}
+}
+.contacts__heading{
+  @include heading-mobile();
+  margin: 0;
+  @media (min-width: $desktop-width){
+    margin-left: 64px;
+  }
+}
+
+
+
+.contacts__line{
+  display: none;
+  @media (min-width: $tablet-width){
+    display: block;
+  }
+
+  @media (min-width: $desktop-width){
+    order: -1;
+  }
+}
+}
+
+
+.contacts__wrap{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 40px;
+  @media (min-width: $tablet-width){
+    grid-template-columns: min-content min-content min-content 1fr;
+    margin-bottom: 50px;
+  }
+  @media (min-width: $desktop-width){
+    grid-template-columns: 1fr 2fr;
+      margin-left: 111px;
+  }
+
+  .contacts__text{
+    @media (min-width: $tablet-width){
+
+  min-width: 80px;}
+}
+  .contacts__text--adress{
+    @media (min-width: $tablet-width){
+    margin-left: 100px;}
+
+
+  @media (min-width: $desktop-width){
+    margin-left: 0;
+  }
+
+  }
+
+  .contacts__text--email{
+    width: 190px;
+    height: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid $green-line;
+    color: inherit;
+    @media (min-width: $tablet-width){
+      height: 30px;
+      min-width: 150px;
+
+    }
+    &:hover{
+      color: $mail;
+    }
+    &:active{
+      color: $mail;
+      border-bottom: 1px solid rgba(70, 193, 174, 0.1);
+    }
+  }
+}
+
+.button--contacts{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  @media (min-width: $tablet-width){
+    width: auto;
+  }
+}
+
+.contacts__wrapper-heading{
+  @media (min-width: $tablet-width){
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: $desktop-width){
+  justify-content:stretch;
+
+}
+}
+
+.contacts__wrapper-desktop{
+  @media (min-width: $desktop-width){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
+.contacts__button-wrapper{
+  margin-top: 40px;
+  padding: 0 10%;
+}
+.contacts__map{
+  display: block;
+  margin: 0 auto;
+}
+
+.button--contacts-mobile-tablet{
+  @media (min-width: $desktop-width){
+    display: none;
+  }
+}
+.button--contacts-desktop{
+  display: none;
+  @media (min-width: $desktop-width){
+    display: block;
+  }
+
+}

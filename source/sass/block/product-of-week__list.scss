@@ -1,0 +1,173 @@
+
+.product-of-week{
+  width: auto;
+  margin-top: 40px;
+  position: relative;
+
+  color: $text-base;
+  @include font-normal();
+  font-size: 15px;
+  line-height: 24px;
+  @media (min-width: $tablet-width){
+    font-size: 17px;
+    line-height: 30px;
+    }
+}
+
+
+
+.product-of-week__wrapper{
+  padding: 0 30px;
+
+  margin-bottom: 36px;
+  @media (min-width: $tablet-width){
+    padding: 0 50px;
+    margin-bottom: 52px;
+
+  }
+}
+
+.product-of-week__wrap1{
+  @media (min-width: $tablet-width){
+    width: 340px;
+  }
+  @media (min-width: $desktop-width){
+padding-left: 13%;
+bottom: 0;
+vertical-align: center;
+
+
+;  }
+}
+.wrapper-tablet{
+  @media (min-width: $tablet-width){
+    margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: $desktop-width){
+
+  align-items:flex-end;}
+
+}
+
+}
+
+.product-of-week__image{
+  display: none;
+  @media (min-width: $tablet-width){
+    display: block;
+  }
+
+  @media (min-width: $desktop-width){
+  height: 100%;
+  }
+  }
+
+  .product-of-week__image-mobile{
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width){
+      display: none;
+    }
+  }
+
+.product-of-week__heading-wrapper{
+  @media (min-width: $tablet-width){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+  .product-of-week__heading{
+    @include font-bold();
+    font-size: 25px;
+    line-height: 30px;
+    color: $black;
+    margin: 0;
+    @media (min-width: $tablet-width){
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+    }
+    @media (min-width: $desktop-width){
+    font-size: 53px;
+    line-height: 57px;
+    }
+  }
+
+  .product-of-week__subtitle{
+    @include font-bold();
+    font-size: 17px;
+    line-height: 20px;
+    color: $mint;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 17px;
+    @media (min-width: $tablet-width){
+      width: min-content;
+    font-size: 17px;
+    line-height: 17px;
+    }
+  }
+
+  .product-of-week__text{
+    margin: 0;
+    margin-bottom: 28px;
+
+  }
+
+  .list-feauture{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .product-of-week__price{
+    margin: 25px 0;
+   text-align: center;
+    @include font-bold();
+    font-size: 17px;
+    line-height: 24px;
+    @media (min-width: $tablet-width){
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 57px;
+      margin-bottom: 33px;
+
+      }
+
+
+  }
+
+.button--order{
+width: 100%;
+  @media (max-width: $mobile-width){
+    bottom: 0;
+  }
+
+}
+
+.list-feauture{
+  overflow: hidden;
+  text-align: left;
+  margin-bottom: 28px;
+
+}
+
+.list-feauture dt{
+  float: left;
+  width: 40%;
+  border-bottom: 1px solid #ECECEC;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.list-feauture dd{
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #ECECEC;
+
+}
+
+

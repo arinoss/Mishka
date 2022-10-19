@@ -1,0 +1,29 @@
+.advantage{
+  width: auto;
+  margin-top: 31px;
+  padding: 0 10%;
+  @include font-bold();
+  font-size: 17px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width){
+    padding: 0 50px;
+  }
+
+  .advantage__heading{
+    font-size: 25px;
+  line-height: 30px;
+
+  }
+
+  .advantage-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @media (min-width: $tablet-width){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20%;
+    }
+  }
+}

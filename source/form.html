@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mishka</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <div class="header__wrapper">
+      <button class="header__button-menu header__button-menu-open"
+        aria-label="Кнопка для открытия и закрытия главного меню"></button>
+      <a class="header__logo-mobile" href="index.html">
+        <svg class="header__logo-mobile-icon" width="86" height="35" alt="Логотип сайта Мишка">
+          <use xlink:href="img/icon.svg#logo-mobile"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="header-main__nav">
+      <h1 class="visually-hidden">Навигация по сайту</h1>
+      <ul class="nav-header nav-header-wrapper">
+        <li class="nav-header__item header__logo-tablet">
+          <a href="index.html">
+            <svg width="114" height="46" alt="Логотип сайта Мишка">
+              <use xlink:href="img/icon.svg#logo-tablet"></use>
+            </svg>
+          </a>
+        </li>
+        <li class=" nav-header__item header__logo-desktop">
+          <a href="index.html">
+            <svg width="149" height="72" alt="Логотип сайта Мишка">
+              <use xlink:href="img/icon.svg#logo-desktop"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-header__item nav-header__catalog"> <a href="catalog.html"><span>Каталог товаров</a></li>
+        <li class="nav-header__item nav-header__knitting "> <a href="form.html"><span>Вязание на заказ</span></a></li>
+        <li class="nav-header__item nav-header__search "> <a href="#" class="nav-header__search-link">
+            <svg class="nav-header__search-icon" width="18" height="18" alt="Поиск по сайту">
+              <use xlink:href="img/icon.svg#search"></use>
+            </svg>
+            <span class="nav-header__search-text"><span>Поиск по сайту</span></span></a></li>
+        <li class="nav-header__item nav-header__basket">
+          <a href="#" class="nav-header__basket-link">
+            <svg class="nav-header__search-icon" width="20" height="18" alt="Поиск по сайту">
+              <use xlink:href="img/icon.svg#cart"></use>
+            </svg>
+            <span class="nav-header__basket-text"> <span>Корзина: пока пуста</span> </span></a>
+        </li>
+        <li class="nav-header__item nav-header__new"> <a href="#"><span>Новое поступление</span></a></li>
+        <li class="nav-header__item nav-header__sale"> <a href="#"><span>Распродажа</span></a></li>
+        <li class="nav-header__item nav-header__delivery"><span>Бесплатная доставка по миру
+          </span></li>
+        <li class="nav-header-empty1">
+          <div></div>
+        </li>
+        <li class="nav-header-empty2"></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-form">
+    <h1 class="catalog__heading">Вязание на заказ
+      <svg class="zigzag" width="100%" height="62" viewBox="0 0 768 24" alt="">
+        <use xlink:href="img/icon.svg#zigzag"></use>
+      </svg>
+    </h1>
+    <div class="main-form__wrapper">
+      <p class="main-form__subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+        мы свяжемся с вами, чтобы уточнить детали.</p>
+
+      <form class="form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма для оформления заказа">
+        <fieldset class="form__fieldset form__fieldset-wrapper"
+          aria-label="Выбрать тип изделия. Вы можете выбрать только 1 тип в данной форме">
+          <div class="form__heading__wrapper">
+            <legend class="form__heading">Тип</legend>
+            <hr class="form__line">
+          </div>
+          <ul class="form__list list-type">
+            <li class="list-type__item">
+              <input checked class="form-type__input visually-hidden" type="radio" name="type" id="interior_accessory">
+              <label class="form-type__label" for="interior_accessory">Аксессуар для<br> интерьера</label>
+            </li>
+            <li class="list-type__item">
+              <input class="form-type__input visually-hidden" type="radio" name="type" id="toy">
+              <label class="form-type__label" for="toy">Детская игрушка</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class=" form-color form__fieldset  form__fieldset-wrapper"
+          aria-label="Выбрать цвет изделия. Вы можете выбрать несколько цветов">
+          <div class="form__heading__wrapper">
+            <legend class="form__heading">Цвет</legend>
+            <hr class="form__line">
+          </div>
+          <ul class="form__list list-color">
+            <li class="list-color__item">
+              <input class="form-color__input visually-hidden" type="checkbox" id="white" name="color-white" checked>
+              <label class="form-color__label" for="white">Белый</label>
+            </li>
+            <li class="list-color__item">
+              <input class="form-color__input visually-hidden" type="checkbox" id="gray" name="color-gray" checked>
+              <label class="form-color__label" for="gray">Серый</label>
+            </li>
+            <li class="list-color__item">
+              <input class="form-color__input visually-hidden" type="checkbox" id="tiffany" name="color-tiffany">
+              <label class="form-color__label" for="tiffany">«Тиффани»</label>
+            </li>
+            <li class="list-color__item">
+              <input class="form-color__input visually-hidden" type="checkbox" id="black" name="color-black">
+              <label class="form-color__label" for="black">Черный</label>
+            </li>
+            <li class="list-color__item">
+              <input class="form-color__input visually-hidden" type="checkbox" id="pink" name="color-pink">
+              <label class="form-color__label" for="pink">Розовый</label>
+            </li>
+            <li class="list-color__item">
+              <input class="form-color__input visually-hidden" type="checkbox" id="orange" name="color-orange">
+              <label class="form-color__label" for="orange">Оранжевый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset form-user form__fieldset-wrapper"
+          aria-label="Введите ваши фамилию, имя. Отчество по желанию">
+          <div class="form__heading__wrapper">
+            <legend class="form__heading">ФИО</legend>
+            <hr class="form__line">
+          </div>
+          <ul class="form__list list-user">
+            <li class="list-user__item">
+              <label class="form-user__label">Имя:</label>
+              <input class="form-user__input" type="text" placeholder="Введите ваше имя*">
+            </li>
+            <li class="list-user__item">
+              <label class="form-user__label">Фамилия:</label>
+              <input class="form-user__input" type="text" placeholder="Укажите фамилию*">
+            </li>
+            <li class="list-user__item">
+              <label class="form-user__label">Отчество:</label>
+              <input class="form-user__input form-user__input-nomargin" type="text"
+                placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+        </fieldset aria-label="Введите ваш номер телефона для связи. Поле обязательно к заполнению">
+        <fieldset class="form__fieldset form__fieldset-wrapper form-tel">
+          <div class="form__heading__wrapper">
+            <legend class="form__heading">Тел</legend>
+            <hr class="form__line">
+          </div>
+          <label class="visually-hidden">Введите ваш номер телефона</label>
+          <input class="form-user__input form-user__input--phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset-wrapper form-mail"
+          aria-label="Введите ваш электронный адрес для связи. Поле обязательно к заполнению">
+          <div class="form__heading__wrapper">
+            <legend class="form__heading form__heading--email">E-mail</legend>
+            <hr class="form__line">
+          </div>
+          <label class="visually-hidden">Введите ваш E-mail</label>
+          <input class="form-user__input form-user__input--email" type="mail" placeholder="Ваш Email*">
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset-wrapper" aria-label="Поле для ввода дополнительной информации">
+          <div class="form__heading__wrapper">
+            <legend class="form__heading">Доп</legend>
+            <hr class="form__line">
+          </div>
+          <label class="visually-hidden">Введите дополнительные комментарии, если желаете</label>
+          <textarea class="form-user__input--more" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+      </form>
+      <div class="main-form__bottom-wrapper">
+        <small class="main-form__note">*Поля обязательны для заполнения</small>
+        <button class="button button--form">Отправить заказ</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <h1 class="visually-hidden">Связаться с нами в социальных сетях</h1>
+    <div class="footer__wrapper">
+      <svg class="footer__logo" width="86" height="35" alt="Логотип сайта Мишка">
+        <use xlink:href="img/icon.svg#logo-mobile"></use>
+      </svg>
+      <div class="footer-main__social-wrapper social-footer">
+        <a class="social-footer__link" aria-label="Перейти на нашу страницу в Инстаграмме">
+          <svg class="social-footer__icon" alt="Мы в Инстаграмм" width="22" height="22">
+            <use xlink:href="img/icon.svg#inst"></use>
+          </svg>
+        </a>
+        <a class="social-footer__link" aria-label="Перейти на нашу страницу на Фейсбуке">
+          <svg class="social-footer__icon" alt="Мы на Фейсбук" width="15" height="28">
+            <use xlink:href="img/icon.svg#fb"></use>
+          </svg>
+        </a>
+        <a class="social-footer__link" aria-label="Перейти на нашу страницу в Твиттере">
+          <svg class="social-footer__icon" alt="Мы в Твиттере" width="23" height="20">
+            <use xlink:href="img/icon.svg#twitter"></use>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-main_text">by Arina Us</p>
+    </div>
+  </footer>
+  <script src = './js/main.js'></script>
+
+</body>
+
+</html>

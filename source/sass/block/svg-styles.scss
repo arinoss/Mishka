@@ -1,0 +1,44 @@
+.footer__logo{
+  fill: black;
+  &:hover{
+    fill: #63D1BB;
+  }
+  &:active{
+    fill: #63D1BB;
+    opacity: 0.3;
+  }
+}
+
+.social-footer__icon{
+  fill: black;
+
+  &:hover{
+    fill: #46C1AE;
+  }
+
+  &:active{
+    fill: #46C1AE;
+    opacity: 0.3;
+  }
+}
+
+.nav-header__search-icon{
+  fill: black;
+}
+
+.options-promo__icon-toy, .options-promo__icon-chandelier{
+  opacity: 0.5;
+}
+
+.icon-play{
+  width:102px;
+  height:150px;
+
+  &:hover{
+    opacity: 0.7;
+
+  }
+  &:active{
+    opacity: 0.3;
+  }
+}
